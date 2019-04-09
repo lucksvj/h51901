@@ -37,6 +37,9 @@ require(["require.config"],  ()=> {
              e=e||window.event;
              let target=e.target ||e.srcElement;
              let li =target.parenNode.parenNode;
+
+
+             
 			}).bind(this);
         }
     }
