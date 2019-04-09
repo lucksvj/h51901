@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/shop.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 头部容器-->
+    <div id="header-con">
+
+    </div>
+    <!-- 购物详情容器-->
+    <div class="box">
+        <div class="deta" id="circum">
+            <!--  <div class="box-left" id="delita-map">
+                     <div class="left-shop"><img src="{{img}}" alt=""></div>
+                    <div class="egg">
+                        <div class="egg-box"><img src="{{img}}" alt=""></div>
+                        <div class="egg-box"><img src="{{img}}" alt=""></div>
+                        <div class="egg-box"><img src="{{img}}" alt=""></div>
+                        <div class="egg-box"><img src="{{img}}" alt=""></div>
+                  </div>
+                </div>
+                <div class="box-right">
+                   
+                    <div class="box-deta" id="circum">-->
+            <!--  <div class="name">
+                                <p>农家散养土鸡蛋30枚 礼盒装  鲜鸡蛋 土鸡蛋 柴鸡蛋 初生蛋</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-a">
+                                    <div class="price-c">售&nbsp;&nbsp;价</div>
+                                    <div class="price-b">
+                                       <span class="rmb">￥<span>
+                                        <span class="rmb-a">42.9</span>
+                                    </div>
+                                    <div class="volu">
+                                        <span>1+</span>
+                                        <p>累积销量</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="box-next">
+                           <div class="box-count">
+                            <div class="reduc">+</div>
+                              <input type="text" value="1" id="">
+                              <div class="push">-</div>
+                           </div>
+                             
+                        </div>
+                        <div class="immed">
+                            <div class="sut-btn">立即购买</div>
+                            <div class="shop-btn">加入购物车</div>
+                        </div>
+                    </div>-->
+            <script type="text/html" id="page">
+                        <div class="box-left" >
+                                        <div class="d-left">
+                                                <div class="view_bd">
+                                                    <img class="zoom-img" src="{{bigimg[0]}}" data-zoom-image="{{bigimg[0]}}"/>
+                                                </div>
+                                                <div class="view_thumbs" id="gal1">
+                                                    <ul class="view-ul" id="uls">
+                                                        <li class="current">
+                                                                <a href="#" data-image="{{bigimg[1]}}" data-zoom-image="{{bigimg[1]}}">
+                                                                    <img class="s" src="{{bigimg[1]}}" alt="">
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-image="{{img[2]}}"
+                                                             data-zoom-image="{{bigimg[2]}}">
+                                                            <img class="s" src="{{img[2]}}" />
+                                                        </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-image="{{img[3]}}" 
+                                                            data-zoom-image="{{bigimg[3]}}">
+                                                            <img class="s" src="{{img[3]}}"/>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="#" data-image="{{img[4]}}" 
+                                                                data-zoom-image="{{bigimg[4]}}">
+                                                                <img class="s" src="{{img[4]}}"/>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                 </div>
+                               </div>
+
+
+            
+                               <div class="box-right">
+                                  
+                                   <div class="box-deta" >
+                        <div class="name">
+                            <p>{{title}}</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-a">
+                                <div class="price-c">售&nbsp;&nbsp;价</div>
+                                <div class="price-b">
+                                   <span class="rmb">￥<span>
+                                    <span class="rmb-a">{{price}}</span>
+                                </div>
+                                <p>市场价:{{market}}</p>
+                                <div class="volu">
+                                    <span>{{valome}}</span>
+                                    <p>累积销量</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="box-next">
+                       <div class="box-count">
+                        <div class="reduc">+</div>
+                          <input type="text" value="1" id="">
+                          <div class="push">-</div>
+                       </div>
+                       
+                    </div>
+                    <div class="immed">
+                            <div class="sut-btn" >立即购买</div>
+                            <div class="shop-btn" id="shopCart">加入购物车</div>
+                        </div>
+            </script>
+            
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- 尾部容器-->
+    <div id="footer-tail">
+
+    </div>
+    <script src="/lib/requirejs/require.js" data-main="/js/shop.js"></script>
+   
+   
+    
+    
+</body>
+
+</html>

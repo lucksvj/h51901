@@ -1,0 +1,329 @@
+*{padding: 0;margin: 0;}
+    
+    ul li{
+        list-style:none;	
+    }
+    a{
+        text-decoration:none;	
+    }
+
+    header{
+        width: 100%;
+        height:194px;
+        background: #f8f8f8;
+        position: relative;
+    }
+    header .nav{
+        width: 1190px;
+        height: 31px;
+        margin: 0 auto;
+    
+    }
+    header .nav h5 {
+        height: 31px;
+        line-height: 31px;
+        font-weight:normal;
+        float: left;
+    }
+    header .nav h5 span{
+       color: #ff6300;
+    }
+    header .nav ul{
+        width: 490px;
+        height: 31px;
+        line-height: 31px;
+        float: right;
+        display: flex;
+        justify-content:space-between;
+    
+    }
+    header .nav ul a{
+        font-size: 13px;
+        color: #ccc;
+    }
+    header .nav ul  .imga{
+       padding-left: 5px;
+       padding-bottom: 2px;
+    }
+    header .nav ul .genera{
+        
+        position: relative;
+    }
+    header .nav ul  .imgs{
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        left:-20px;
+        top:30px;
+        display: none;
+    }
+    header .nav ul .genera:hover img{
+        display: block;
+        z-index: 99;
+    }
+    .mian{
+        width: 100%;
+        height: 163px;
+        background: #f4f4f4;
+    }
+    .log{
+        width: 1190px;
+        height: 105px;
+        background:#f4f4f4;
+        margin: 0 auto;
+        position: relative;
+    }
+    .log h1{
+        float: left;
+    }
+    .log .login{
+        width: 406px;
+        margin-top: 30px;
+    }
+    .log .search{
+        float: left;
+        width: 500px;
+        height: 38px;
+        position: relative;
+        margin-top: 30px;
+        margin-left: 148px;
+        border-radius: 2px;
+        text-align: left;
+        position: relative;
+    }
+    .log .search #syssearch{
+        width: 358px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 14px;
+        color: #999;
+        background-color: transparent;
+        border: 2px solid #f29d38;
+        float: left;
+        padding-left: 28px;
+        outline: none;
+    }
+    .log .search #btn{
+       width: 110px;
+       height: 38px;
+       outline: none;
+       border: 0;
+        line-height: 38px;
+        text-align: center;
+        background: #f29d38;
+        border-radius: 2px;
+        float: left;
+        font-size: 16px;
+        color: #fff;
+       
+    }
+    .log .search #search{
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 16px;
+        height: 16px;
+      
+    }
+    .log .disp{
+        width: 390px;
+        display: none;
+        position: absolute;
+        top:38px;
+        z-index: 999;
+    }
+    .log .disp ul{
+        background: #fff;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction:column;
+    }
+    .log .disp ul li{
+     width: 390px;
+    }
+    .log .cart{
+       float: left;
+        width: 114px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        background: #f7f7f7;
+        border-radius: 2px;
+        margin: 30px 0 0 20px;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #ddd;
+    
+    }
+    .log .cart .shop{
+        position: absolute;
+        top: 42px;
+        right: 86px;
+        width: 16px;
+        height: 14px;
+    }
+    .log .cart i{
+       font-style: normal;
+       color: #fff;
+    }
+    .log .cart .num{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right:12px;
+        width:18px;
+        height:18px;
+        line-height: 18px;
+        background: #cc141c;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+    .nav-bar{
+        width: 1190px;
+        height: 40px;
+        margin: 0 auto;
+        background: #ccc;
+        line-height: 40px;
+        margin-top: 18px;
+    }
+    .nav-bar ul{
+        width: 1190px;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+    .nav-bar ul li{
+        float: left;
+        margin-left: 50px;
+        font-size: 14px;
+        color: #4d3e36;
+        font-weight: 700;
+    }
+    .nav-bar ul li:nth-child(1){
+        color:#ff910a;
+    }
+    .nav-bar ul li:nth-child(7){
+        color:#ff910a;
+        position: relative;
+    }
+    #footer{
+        width: 100%;
+        background: #cc141c;
+        color: #4d3e36;
+        height: 300px;
+        text-align: center;
+        background-color: #fff;
+        overflow: hidden;
+        border-top: 1px solid #d6d6d6;
+        margin-top: 60px;
+    }
+    #footer .base{
+        width: 1190px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer .base .phone{
+        width: 355px;
+        float: left;
+        box-sizing: content-box;
+    }
+    #footer .base .box1{
+        line-height: 24px;
+        margin-top: 82px;
+        font-size: 20px;
+    }
+    #footer .base .box2{
+        font-size: 22px;
+        line-height: 76px;
+        font-weight: 700;
+    }
+    #footer .base .line{
+        float: left;
+        margin-top: 50px;
+        width: 1px;
+        height: 200px;
+        background-color: #d6d6d6;
+    }
+    #footer .base  .prese{
+        padding: 0 90px;
+        width: 387px;
+        height: 224px;
+        float: left;
+    }
+    #footer .base  .prese h3{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 64px;
+    }
+    #footer .base  .prese p{
+      
+        font-size: 14px;
+        line-height: 30px;
+        text-align: left;
+    }
+    #footer .base .ewm{
+        width: 210px;
+        height: 224px;
+        float: right;
+        box-sizing: content-box;
+    }
+    #footer .base .ewm h3{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 64px;
+    }
+    #footer .base .ewm img{
+        display: inline-block;
+        width: 166px;
+        height: 166px;
+    }
+    .sysbut{
+        width: 100%;
+        height: 250px;
+        background: #999;
+    }
+    .sysbut .porta{
+        width: 100%;
+        height: 40px;
+        background: #ff910a;
+    }
+    .sysbut .porta .porta-footer{
+        width: 1190px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+    }
+    .sysbut .porta .porta-footer ul{
+        display: flex;
+        justify-content:space-between;
+        height: 40px;
+        line-height: 40px;
+    
+    }
+    .sysbut .porta .porta-footer ul a{
+        color:#fff;
+    }
+    .sysbut .porta .porta-footer ul span{
+      color: #fff;
+    }
+    .sysbut .lime{
+        width: 100%;
+        height: 211px;
+        text-align: center;
+    }
+    .sysbut .lime p{
+        height:26px;
+        color: #ccc;
+        font-size: 14px;
+    }
+    .sysbut .lime p:nth-child(1){
+        padding-top:10px;
+    }
+    .sysbut .lime span{
+        padding: 0 2px;
+        
+    }

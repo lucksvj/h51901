@@ -1,0 +1,218 @@
+@import "style";
+@import "pagination";
+.box{
+   width:100%;
+   height: 450px;
+
+}
+ .deta{
+    width: 1190px;
+    height: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+}
+.deta .box-left{
+    width: 546px;
+    height: 430px;
+    float: left;
+}
+.deta .box-left .d-left{
+
+    height: 428px;
+
+    float: left;
+    } 
+.deta .box-left .view_bd{
+        width: 428px;
+        height: 428px;
+        float: left;
+    }
+.deta .box-left .view_bd img{
+    width: 428px;
+    height: 428px;
+    }
+.deta .box-left .view_thumbs{
+    width: 98px;
+    height: 428px;
+    float: left;
+    margin-left: 10px;
+    }
+.deta .box-left .view_thumbs ul{
+    width: 98px;
+    height: 428px;
+}
+.deta .box-left .view_thumbs ul li{
+    width: 96px;
+    height: 96px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border: 1px solid #d6d6d6;
+}
+ .deta .box-left .view_thumbs ul li img{
+    width: 96px;
+    height: 96px;
+}
+.box .deta  .box-right{
+    width: 610px;
+    height: 430px;
+    float: left;
+}
+.box .deta .box-right .box-deta{
+    width: 610px;
+    height: 430px;
+    margin-left: 32px;
+    float: left;
+}
+.box .deta .box-right .box-deta .name{
+    width: 610px;
+    height:54px;
+}
+.box .deta .box-right .box-deta .name p{
+    color: #333;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 22px;
+    margin-bottom: 10px;
+    height: auto;
+    line-height: 24px;
+    overflow: hidden;
+}
+.box .deta .box-right .box-deta .price{
+    width: 100%;
+    height: 166px;
+    background: #fff2e8;
+    border-top: 1px solid transparent;
+    position: relative;
+}
+.box .deta .box-right .box-deta .price .price-a{
+    width: 100%;
+    height: 75px;
+    padding: 10px 0 0 11px;
+    margin: 5px 5px 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.box .deta .box-right .box-deta .price .price-a .price-c{
+    width: 45px;
+    height:18px;
+    float: left;
+}
+.box .deta .box-right .box-deta .price .price-a .price-b{
+    width: 137px;
+    height: 44px;
+    color: #4b3e37;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+}
+.box .deta .box-right .box-deta .price .price-a .price-b .rmb{
+    font-size: 14px;
+    display: inline-block;
+    color: #c63630;
+}
+.box .deta .box-right .box-deta .price .price-a .price-b .rmb .rmb-a{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: -4px;
+    color: #c63630;
+}
+.box .deta .box-right .box-deta .price .price-a .volu{
+    width: 95px;
+    height: 42px;
+    border-left: 1px solid #d9dded;
+    float: right;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 22px;
+}
+.box .deta .box-next{
+    width: 100%;
+    font-size: 0;
+    text-align: left;
+    height: 32px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.box .deta .box-next .box-count{
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    margin-left: 40px;
+    overflow: hidden;
+}
+.box .deta .box-next .box-count .reduc{
+    width: 28px;
+    height: 28px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    display: inline-block
+}
+.box .deta .box-next .box-count  input{
+    outline: none;
+    width: 70px;
+    color: #333;
+    font-size: 14px;
+    background: #fff;
+    height: 30px;
+    border-right: 1px solid #d6d6d6;
+    text-align: center;
+}
+.box .deta .box-next .box-count .push{
+    width: 28px;
+    height: 28px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+.box .deta .box-right .immed{
+    width: 403px;
+    height: 96px;
+}
+.box .deta .box-right .immed .sut-btn{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    width: 170px;
+    height: 50px;
+    background: #fff9f5;
+    color: #f29d38;
+    margin-top: 44px;
+    margin-left: 13px;
+    border: 1px solid #f29d38;
+    border-radius: 3px;
+}
+.box .deta .box-right .immed .shop-btn{
+    width: 168px;
+    height: 51px;
+    background: #f29d38;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/cart.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--头部容器-->
+    <div id="header-con">
+
+    </div>
+    <!--购物车-->
+    <div class="shopping">
+        <div class="cart" id="cart-shop">
+            <div class="cart-top">
+                <div class="disco">
+                    <img src="/img/xz.png" alt="">
+                    <span>购物车中优惠价</span>
+                </div>
+            </div>
+            <div class="cart-head">
+                <input type="checkbox" name="" class="ckbox">
+                <div class="allwords">全选</div>
+                <div class="headerwords">商品信息</div>
+                <div class="header-singer">单价</div>
+                <div class="header-count">数量</div>
+                <div class="header-count">金额</div>
+            </div>
+                <!-- <div class="cart-box">
+                    <input type="checkbox" name="" class="skbox">
+                    <img src="/img/wKgGS1w0DpWAbDBnAAB9Rx9ffKc305.png" alt="">
+                    <div class="cart-xq">
+                        <span>【惊喜团购】今世缘42度典藏10年 500ml*6瓶整箱装 浓香型白酒宴请酒喜酒</span>
+                    </div>
+                    <div class="price">￥888</div>
+                    <div class="shop-num">
+                        <div class="cart-jian">-</div>
+                        <input type="text" value="1" class="cart-num">
+                        <div class="cart-jia">+</div>
+                        <div class="cart-money">￥888</div>
+                        <div class="cart-rem">x</div>
+                    </div>
+                </div> -->
+                <ul class="cart-bom">
+            <script type="text/html" id="commodity">
+                {{each cart prod}}
+                <li class="cart-box" id="">
+                    
+                        <input type="checkbox" name="" class="checked">
+                        <img src="{{prod.img[0]}}"alt="">
+                        <div class="cart-xq">
+                            <span>{{prod.title}}</span>
+                        </div>
+                        <div class="price">{{prod.price}}</div>
+                        <div class="shop-num">
+                            <div class="cart-jian">-</div>
+                             <input type="text" value="{{prod.num}}" class="cart-num">
+                             <div class="cart-jia">+</div>
+                             <div class="cart-money">{{prod.valome}}</div>
+                             <div class="cart-rem">x</div>
+                        </div>
+                  
+                </li>
+                
+            {{/each}}
+             <div class="cart-but" >
+                        <input type="checkbox" name="" class="cart-whole">
+                        <div class="allwords">全选</div>
+                        <div class="delete">删除</div>
+                        <div class="footer-haved">
+                            <span>已选</span>
+                            <span>0</span>
+                            <span>件</span>
+                        </div>
+                        <div class="total">合计(不含运费)</div>
+                        <div class="money">0</div>
+                        <div class="balance">结算</div>
+                    </div>
+            
+            </script>
+            <!-- <div class="cart-but" id="commodity">
+                <input type="checkbox" name="" class="cart-whole">
+                <div class="all">全选</div>
+                <div class="delete">删除</div>
+                <div class="footer-haved">
+                    <span>已选</span>
+                    <span>0</span>
+                    <span>件</span>
+                </div>
+                <div class="total">合计(不含运费)</div>
+                <div class="money">¥0.00</div>
+                <div class="balance">结算</div>
+            </div> -->
+        </ul>
+        </div>
+    </div>
+    <!--尾部容器-->
+    <div id="footer-tail">
+
+    </div>
+    <script src="/lib/requirejs/require.js" data-main="/js/cart.js"></script>
+</body>
+
+</html>

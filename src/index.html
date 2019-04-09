@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/lib/swiper/css/swiper.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--头部容器-->
+  <div id="header-con">
+  
+  </div>
+  <!--轮播图-->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide imga"><img src="/img/wKgGSFxrYVCAcrWYAAJ9BNvI8kI596.jpg"></div>
+      <div class="swiper-slide imga"><img src="/img/wKgGSFxCsxiAC3wlAAIPbjY_4IA220.jpg"></div>
+      <div class="swiper-slide imga"><img src="/img/wKgGSFwh37yAOe3hAAMtqOBQSQo049.jpg"></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <!-- 侧边购物车-->
+  <div class="right-nav" id="sider">
+     <ul>
+       <li>
+         <img src="/img/gwc.png">
+         <p>购物车</p>
+       </li>
+       <li>
+         <a href="" id="scoopTop">
+            <p class="top">^<p>
+             <p>回到顶部</p>
+         </a>
+       </li>
+     </ul>
+  </div>
+  
+  <!--领取优惠卷-->
+  <div class="wrapp">
+    <div class="res">
+  
+      <a>优惠券限量领取 先到先得 </a>
+      <a>满500减100</a>
+      <span>立即领取</span>
+    </div>
+    <!--商品-->
+    <div class="hhx">
+      <span class="first">新品首发</span>
+      <span class="firsta">发现优质好货</span>
+    </div>
+    <div class="made" id="listHed"></div>
+    <script type="text/html" id="fristShop">
+                <ul>
+                        {{each list item}}
+                        <li class="xiangqing">
+                          <a href="/html/shop.html?id={{ item.id }}"> 
+                            
+                            <img src="{{ item.img }}" alt="">
+                            <p class="text">{{ item.title }}</p> 
+                          </a>
+                          <p class="cle">
+                              <span>￥</span><span class=" price">{{ item.price }}</span>
+    
+                              <i class="iconfont icon-huo"></i>
+                              <span class="hot">4</span>
+                          </p>
+                        </li>
+                        {{ /each }}
+    
+                      </ul>
+            </script>
+  
+  
+    <div class="hhx">
+      <span class="first">地标精品</span>
+      <span class="firsta">搜罗地域特色货源</span>
+    </div>
+    <div class="product">
+      <div class="prod">
+        <div class="foor">
+          <img src="img/product.png">
+        </div>
+      </div>
+      <div class="shop-a" id="taset"> </div>
+      <script type="text/html" id="specialty">
+                <ul>
+                        {{each enty item}}
+                        <li class="shop-spec">
+                                <p class="text">{{ item.title }}</p>  
+                          <a href="/html/shop.html?id={{ item.id }}"> 
+                            
+                            <img src="{{ item.img }}" alt="">
+                         
+                          </a>
+                          <p class="cle">
+                                <p class="hot">{{ item.csentence }}</p>
+                              <p>￥</span><span class=" price">{{ item.price }}</p>
+                             
+                          </p>
+                          <span class="left-btn">加入购物车</span>
+                          <span class="right-btn">立即购买</span>
+                        </li>
+                        {{ /each }}
+    
+                      </ul>
+            </script>
+    </div>
+    <div class="scre">
+      <div class="legend"></div>
+      <div class="rey" id="native"></div>
+    </div>
+    <script type="text/html" id="local">
+      <ul>
+              {{  each enty item}}
+              <li class="shop-spec">
+                      <p class="text">{{ item.title }}</p>  
+                <a href="/html/shop.html?id={{ item.id }}"> 
+                  
+                  <img src="{{ item.img }}" alt="">
+               
+                </a>
+                <p class="cle">
+                      <p class="hot">{{ item.csentence }}</p>
+                    <p>￥</span><span class=" price">{{ item.price }}</p>
+                   
+                </p>
+              </li>
+              {{ /each }}
+
+            </ul>
+  </script>
+    <div class="hhx">
+      <span class="first">品牌特惠</span>
+      <span class="firsta">搜罗地域特色货源</span>
+    </div>
+    <div class="odds" id="preferential">
+    </div>
+    <script type="text/html" id="vouchsafe">
+      <ul>
+              {{  each enty item}}
+              <li class="shop-spec">
+                      <p class="text">{{ item.title }}</p>  
+                <a href="/html/shop.html?id={{ item.id }}"> 
+                  
+                  <img src="{{ item.img }}" alt="">
+               
+                </a>
+                <p class="cle">
+                      <p class="hot">{{ item.csentence }}</p>
+                    <p>￥</span><span class=" price">{{ item.price }}</p>
+                   
+                </p>
+                <span class="left-btn">加入购物车</span>
+                <span class="right-btn">立即购买</span>
+              </li>
+              {{ /each }}
+
+            </ul>
+  </script>
+    <div class="hhx">
+      <span class="first">产业推荐</span>
+      <span class="firsta">行业精选，权威推荐</span>
+    </div>
+    <div class="product">
+      <div class="prod">
+        <div class="foor">
+          <img src="img/product.png">
+        </div>
+      </div>
+      <div class="shop-a" id="choice">
+      </div>
+      <script type="text/html" id="select">
+        <ul>
+                {{  each enty item}}
+                <li class="shop-spec">
+                        <p class="text">{{ item.title }}</p>  
+                  <a href="/html/shop.html?id={{ item.id }}"> 
+                    
+                    <img src="{{ item.img }}" alt="">
+                 
+                  </a>
+                  <p class="cle">
+                        <p class="hot">{{ item.csentence }}</p>
+                      <p>￥</span><span class=" price">{{ item.price }}</p>
+                     
+                  </p>
+                  <span class="left-btn">加入购物车</span>
+                  <span class="right-btn">立即购买</span>
+                </li>
+                {{ /each }}
+  
+              </ul>
+    </script>
+    </div>
+    <div class="scre">
+      <div class="legend"></div>
+      <div class="rey" id="trade"></div>
+      <script type="text/html" id="ware">
+        <ul>
+                {{  each enty item}}
+                <li class="shop-spec">
+                        <p class="text">{{ item.title }}</p>  
+                  <a href="/html/shop.html?id={{ item.id }}"> 
+                    
+                    <img src="{{ item.img }}" alt="">
+                 
+                  </a>
+                  <p class="cle">
+                        <p class="hot">{{ item.csentence }}</p>
+                      <p>￥</span><span class=" price">{{ item.price }}</p>
+                     
+                  </p>
+                </li>
+                {{ /each }}
+  
+              </ul>
+    </script>
+    </div>
+  </div>
+  <!--尾部容器-->
+  <div id="footer-tail">
+  </div>
+
+  <script src="/lib/requirejs/require.js" data-main="/js/index.js"></script>
+</body>
+
+</html>
