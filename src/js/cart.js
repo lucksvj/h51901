@@ -38,15 +38,7 @@ require(["require.config"],  ()=> {
              let target=e.target ||e.srcElement;
              let li =target.parenNode.parenNode;
             switch(target.className){
-                
-
-
-
-
-
-
-
-                
+            
             }
 
 			}).bind(this);
