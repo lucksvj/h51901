@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="cart-head">
-                <input type="checkbox" name="" class="ckbox">
+                <input type="checkbox" class="ckbox" id="chebox">
                 <div class="allwords">全选</div>
                 <div class="headerwords">商品信息</div>
                 <div class="header-singer">单价</div>
@@ -49,19 +49,19 @@
                 <ul class="cart-bom">
             <script type="text/html" id="commodity">
                 {{each cart prod}}
-                <li class="cart-box" id="">
+                <li data-id={{prod.id}} class="cart-box" id="">
                     
                         <input type="checkbox" name="" class="checked">
                         <img src="{{prod.img[0]}}"alt="">
                         <div class="cart-xq">
-                            <span>{{prod.title}}</span>
+                            <span class="title">{{prod.title}}</span>
                         </div>
                         <div class="price">{{prod.price}}</div>
                         <div class="shop-num">
                             <div class="cart-jian">-</div>
                              <input type="text" value="{{prod.num}}" class="cart-num">
                              <div class="cart-jia">+</div>
-                             <div class="cart-money">{{prod.valome}}</div>
+                             <div class="cart-money">{{(prod.price*prod.num).toFixed(2)}}</div>
                              <div class="cart-rem">x</div>
                         </div>
                   
@@ -69,16 +69,16 @@
                 
             {{/each}}
              <div class="cart-but" >
-                        <input type="checkbox" name="" class="cart-whole">
-                        <div class="allwords">全选</div>
+                        <!--<input type="checkbox" name="" class="cart-whole">-->
+                     <!-- <div class="all">全选</div>-->  
                         <div class="delete">删除</div>
                         <div class="footer-haved">
                             <span>已选</span>
-                            <span>0</span>
+                            <span class="amount">0</span>
                             <span>件</span>
                         </div>
                         <div class="total">合计(不含运费)</div>
-                        <div class="money">0</div>
+                        <div class="money"><span id="moneys"></span></div>
                         <div class="balance">结算</div>
                     </div>
             

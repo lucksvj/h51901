@@ -37,7 +37,7 @@ gulp.task("css", () => {
 gulp.task("js", () => {
   gulp.src("src/js/**/*.js")
     .pipe(babel({
-      presets: ['@babel/env']
+      presets: ['@babel/preset-env']
     }))
     .pipe(uglify())
     .pipe(gulp.dest("dist/js"))

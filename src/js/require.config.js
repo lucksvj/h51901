@@ -9,11 +9,16 @@ require.config({
         "url": "js/url",
         "template": "lib/art-template/template-web",
         "zoom" : "lib/jquery-plugins/jquery.elevateZoom-3.0.8.min",
+        "addtocode":"js/module/addtocode",
+        "fly": "lib/jquery-plugins/jquery.fly.min",
     },
    // 垫片，不满足AMD规范的模块，但是又依赖于另外的模块
 	shim : {
 		"zoom" : {
 			deps: ["jquery"]
-		}
+        },
+        "fly":{
+            deps :["jquery"]
+        }
     }
 })

@@ -2,7 +2,7 @@ define(["jquery"], function ($) {
 	class Header {
 		constructor () {
 			this.init().then(() => {
-			
+			this.num();
 			})
 		}
 		init () {
@@ -15,6 +15,15 @@ define(["jquery"], function ($) {
 			})
 			
 		}
+		num(){
+			$("body").on("click",()=>{
+  
+				var numa=JSON.parse(localStorage.getItem("cart")).length
+				console.log(numa)
+				$("#shop-num").html(numa)
+			})
+	
+	  }
 	}
 
 	return new Header();

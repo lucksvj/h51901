@@ -1,5 +1,5 @@
 require(["require.config"], function () {
-	require(["jquery","header","swiper","url","template", "footer"], function ($, header,swiper,url,template) {
+	require(["jquery","header","swiper","url","template","addtocode", "footer"], function ($, header,swiper,url,template,addtocode) {
 		
 		//轮播图
 		class Index {
@@ -13,7 +13,7 @@ require(["require.config"], function () {
 				this.culling();
 				this.good();
 				this.special();
-			
+			  this. addCart();
 			}
 		    //搜索功能
 			search(){
@@ -190,6 +190,10 @@ require(["require.config"], function () {
 			})
 	
 		 }
+		 addCart(){
+			//加入购物车
+			addtocode($(".wrapp"),".left-btn",null,true);
+	}
 		}
 
 		new Index();

@@ -33,7 +33,7 @@
     <div class="swiper-scrollbar"></div>
   </div>
   <!-- 侧边购物车-->
-  <div class="right-nav" id="sider">
+  <!-- <div class="c" id="sider">
      <ul>
        <li>
          <img src="/img/gwc.png">
@@ -46,7 +46,7 @@
          </a>
        </li>
      </ul>
-  </div>
+  </div> -->
   
   <!--领取优惠卷-->
   <div class="wrapp">
@@ -65,14 +65,14 @@
     <script type="text/html" id="fristShop">
                 <ul>
                         {{each list item}}
-                        <li class="xiangqing">
-                          <a href="/html/shop.html?id={{ item.id }}"> 
+                        <li class="xiangqing"  >
+                          <a href="/html/shop.html?id={{ item.id }}" class="svj"> 
                             
                             <img src="{{ item.img }}" alt="">
                             <p class="text">{{ item.title }}</p> 
                           </a>
                           <p class="cle">
-                              <span>￥</span><span class=" price">{{ item.price }}</span>
+                              <span>￥</span><span class=" item-price">{{ item.price }}</span>
     
                               <i class="iconfont icon-huo"></i>
                               <span class="hot">4</span>
@@ -98,7 +98,7 @@
       <script type="text/html" id="specialty">
                 <ul>
                         {{each enty item}}
-                        <li class="shop-spec">
+                        <li class="shop-spec"data-id={{item.id}} >
                                 <p class="text">{{ item.title }}</p>  
                           <a href="/html/shop.html?id={{ item.id }}"> 
                             

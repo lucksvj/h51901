@@ -115,8 +115,8 @@
         float: left;
         font-size: 16px;
         color: #fff;
-       
     }
+
     .log .search #search{
         position: absolute;
         top: 12px;
@@ -132,6 +132,7 @@
         top:38px;
         z-index: 999;
     }
+
     .log .disp ul{
         background: #fff;
         font-size: 15px;
@@ -157,7 +158,7 @@
         border: 1px solid #ddd;
     
     }
-    .log .cart .shop{
+    .log .cart #shop{
         position: absolute;
         top: 42px;
         right: 86px;
